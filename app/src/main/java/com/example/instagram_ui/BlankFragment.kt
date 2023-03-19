@@ -30,32 +30,34 @@ class BlankFragment : Fragment() {
 
         rasmAdapter= RasmAdapter(list_rasm)
         binding.rv1.adapter=rasmAdapter
-        return binding.root
+
 
         load_Data()
 
-        rasmAdapter2= RasmAdapter2(list_rasm)
+        rasmAdapter2= RasmAdapter2(list)
         binding.rv2.adapter=rasmAdapter2
-        return binding.root
+       return binding.root
     }
 
     private fun loadData() {
         list_rasm=ArrayList()
-
-        list_rasm.add(Rasm(R.drawable.spider_man_2,"Johnson"))
-        list_rasm.add(Rasm(R.drawable.spider_man_1,"Tom"))
-        list_rasm.add(Rasm(R.drawable.spider_man,"Robert"))
-        list_rasm.add(Rasm(R.drawable.captain_2,"Diana"))
+        for (i in 0 until 4) {
+            list_rasm.add(Rasm(R.drawable.img_10, "Johnson"))
+            list_rasm.add(Rasm(R.drawable.img_11, "Tom"))
+            list_rasm.add(Rasm(R.drawable.img_8, "Robert"))
+            list_rasm.add(Rasm(R.drawable.img_9, "Diana"))
+            list_rasm.add(Rasm(R.drawable.img_12, "Thor"))
+        }
     }
 
 
     private fun load_Data() {
-        list=ArrayList()
-
-        list.add(Rasm_2(R.drawable.spider_man_2))
-        list.add(Rasm_2(R.drawable.spider_man_1))
-        list.add(Rasm_2(R.drawable.spider_man))
-        list.add(Rasm_2(R.drawable.captain_2))
+        list = ArrayList()
+        for (i in 0 until 4) {
+            list.add(Rasm_2(R.drawable.spider_man_2))
+            list.add(Rasm_2(R.drawable.spider_man_1))
+            list.add(Rasm_2(R.drawable.captain_3))
+            list.add(Rasm_2(R.drawable.captain_2))
+        }
     }
-
 }

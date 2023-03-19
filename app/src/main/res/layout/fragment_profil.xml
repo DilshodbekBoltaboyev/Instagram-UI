@@ -55,7 +55,7 @@
                android:id="@+id/image"
                android:layout_width="80dp"
                android:layout_height="80dp"
-               android:backgroundTint="#68000000"
+               android:backgroundTint="#3E000000"
                app:layout_constraintTop_toTopOf="parent"
                app:layout_constraintBottom_toBottomOf="parent"
                app:layout_constraintLeft_toLeftOf="parent"
@@ -167,6 +167,7 @@
 
 
         <LinearLayout
+            android:layout_marginTop="10dp"
             android:id="@+id/liner_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -199,15 +200,10 @@
         </LinearLayout>
 
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/rv_edit_profil"
-            app:cardCornerRadius="60dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/edit_profil"
+                app:cornerRadius="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Edit Profil"
@@ -215,7 +211,6 @@
                 android:backgroundTint="@color/white"
                 />
 
-        </androidx.cardview.widget.CardView>
 
 
        <androidx.recyclerview.widget.RecyclerView
@@ -237,7 +232,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="10dp">
+        android:padding="5dp">
 
         <ImageView
             android:layout_width="0dp"

@@ -16,7 +16,7 @@ class RasmAdapter(val rasmList:List<Rasm>) : RecyclerView.Adapter<RasmAdapter.Vh
 
         fun onBind(rasm: Rasm, position: Int) {
             rvItemImageBinding.txtRvItem.text = rasm.name
-            Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(rvItemImageBinding.imageRvItem);
+            rvItemImageBinding.imageRvItem.setImageResource(rasm.image)
 
 
         }
