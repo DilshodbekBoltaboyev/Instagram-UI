@@ -51,7 +51,7 @@
             android:layout_marginBottom="10dp"
             android:text="Instagram"
             android:textColor="@color/black"
-            style="@style/TEXT"
+            android:textStyle="italic"
             android:textSize="28sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -272,12 +272,14 @@
                         >
 
                         <ImageView
+                            android:scaleType="center"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content"
                             android:src="@drawable/captain_2" />
 
                         <ImageView
+                            android:scaleType="center"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content"
